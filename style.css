@@ -99,9 +99,15 @@ button:active {
     margin: auto 10px;
   }
   .quote-text {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
   }
   .fa-quote-left {
     font-size: 1.5rem;
+  }
+  .quote-author {
+    /* margin-top: 15px; */
+    font-size: 1.2rem;
+    /* font-weight: 400; */
+    font-style: italic;
   }
 }

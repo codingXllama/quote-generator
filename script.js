@@ -41,6 +41,23 @@ async function getQuotes() {
   }
 }
 
-//On Load
+// Tweeting Quote functionality
 
+function tweetQuote() {
+  const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent}`;
+  // opening a new window
+  window.open(twitterUrl, "_blank");
+}
+
+// function openGoogle() {
+//   const userName = "iraq284";
+//   const googleUrl = `https://www.youtube.com/user/${userName}`;
+//   window.open(googleUrl, "_blank");
+// }
+
+// EventListeners supposed to be placed at the bottom where we add the fns before calling the btn
+newQuoteBtn.addEventListener("click", newQuote);
+twitterBtn.addEventListener("click", tweetQuote);
+
+//On Load
 getQuotes();
